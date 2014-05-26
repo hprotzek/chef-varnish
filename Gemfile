@@ -1,12 +1,18 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem 'cucumber',   '~> 1.2.1'
-gem 'httparty',   '~> 0.8.3'
-gem 'minitest',   '~> 3.0.0'
-gem 'nokogiri',   '~> 1.5.0'
-gem 'chef',       '~> 10.12.0'
-gem 'chefspec',   '~> 0.6.1'
-gem 'fauxhai',    '~> 0.0.3'
-gem 'foodcritic', '~>1.6.1'
-gem 'rake'
+gem 'berkshelf'
+
+# Uncomment these lines if you want to live on the Edge:
+#
+# group :development do
+#   gem "berkshelf", github: "berkshelf/berkshelf"
+#   gem "vagrant", github: "mitchellh/vagrant", tag: "v1.5.2"
+# end
+#
+# group :plugins do
+#   gem "vagrant-berkshelf", github: "berkshelf/vagrant-berkshelf"
+#   gem "vagrant-omnibus", github: "schisamo/vagrant-omnibus"
+# end
+
 gem 'test-kitchen'
+gem 'kitchen-vagrant'
